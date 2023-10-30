@@ -22,3 +22,31 @@ html {
 /*
 DEBUG
 */
+.debug .header-first-container {
+    background-color: skyblue;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.debug .header-second-container {
+    background-color: blue;
+    height: 700px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-item {
+    background-color: orange;
+    height: 20px;
+    display: flex inline;
+}
+
+.pink-container {
+    background-color: lightcoral;
+    height: 500px;
+    width: 700px;
+}
