@@ -15,38 +15,121 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
+
+.small-container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-item {
+    width: calc((100% / 6) * 1);
+}
+
+.header-link {
+    width: calc((100% / 6) * 4);
+    text-align: center;
+}
+
+.header-login {
+    width: calc((100% / 6) * 1);
+}
+
+.my-col-3-5 {
+    width: calc((100% / 5) * 3);
+}
+
+.my-col-2-5 {
+    width: calc((100% / 5) * 2);
+}
+
+/*
+  HEADER
+*/
+
+.header-first-container .items-container * {
+    height: 40px;
+}
+
+.header-second-container .small-container * {
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+   MAIN
+*/
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.green-container {
+    width: 100%;
+    background-color: green;
+    border: 1px dashed black;
+    height: 600px;
+}
+
+
 
 /*
 DEBUG
 */
+
+
 .debug .header-first-container {
     background-color: skyblue;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 70px;
+    padding-top: 10px;
 }
+
+
+
+.debug .header-first-container .items-container * {
+    background-color: orange;
+    border: 1px dashed black;
+    padding: 10px 0;
+}
+
+
 
 .debug .header-second-container {
     background-color: blue;
-    height: 700px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-item {
-    background-color: orange;
-    height: 20px;
-    display: flex inline;
-}
-
-.pink-container {
-    background-color: lightcoral;
     height: 500px;
-    width: 700px;
+    padding: 50px 0;
+}
+
+
+
+.debug .header-second-container .pink-container {
+    background-color: lightcoral;
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+.debug main section .my-row .my-col-3-5 {
+    background-color: rgb(0, 166, 255);
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+.debug main section .my-row .my-col-2-5 {
+    background-color: rgb(255, 97, 239);
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+
+.debug .grey-back  {
+    background-color: lightgrey;
 }
